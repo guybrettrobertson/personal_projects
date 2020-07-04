@@ -1,1 +1,1 @@
-# fake_vs_news_prediction
+# fake_vs_news_prediction_project
