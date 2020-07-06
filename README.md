@@ -1,6 +1,6 @@
 # fake_vs_news_prediction_project
 
-In this project, I take a dataset of news articles from https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset and implemented machine learning models to predict whether an article is real news or fake news. The key steps of the project are as follows:
+In this project, I take a dataset of news articles from https://www.kaggle.com/clmentbisaillon/fake-and-real-news-dataset and implement machine learning classification models to detect whether an article is real news or fake news. The key steps of the project are as follows:
 
  - Data cleaning and exploratory data analysis;
  - Feature engineering and dimensionality reduction;
