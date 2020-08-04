@@ -1,1 +1,1 @@
-This repo contains my data science and machine learning projects.
+This repo contains data science and machine learning projects.
