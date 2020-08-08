@@ -1,4 +1,4 @@
-# Read me
+# Personal projects
 
 This repository contains my personal data science and machine learning projects. The key projects included are:
 - Real vs fake news prediction: I take a dataset of fake and real news articles and develop an end-to-end model to predict whether an article is real or fake.
