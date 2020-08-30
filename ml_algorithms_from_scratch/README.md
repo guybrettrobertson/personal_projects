@@ -1,0 +1,3 @@
+# Machine learning algorithms from scratch
+
+In this project, I develop machine learning algorithms from scratch using only low-level Python, Numpy, and Pandas functionality. The algorithms developed to date include linear regression and an artificial neural network. The architecture and hyperparameters of the neural network are flexible, allowing for variation of the number of hidden layers, nodes in each hidden layer, learning rate, and activation function. The neural network is trained using stochastic gradient descent.
