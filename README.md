@@ -1,6 +1,7 @@
 # Personal projects
 
 This repository contains my personal data science and machine learning projects. The key projects included are:
+- Audio data classification: The Spotify API has been used to produce a dataset of c. 5,000 songs. In this project, I have implemented machine learning models to classify the songs by genre using the audio features of the songs in the dataset.
 - NIPS publications analysis: The purpose of this project is to use data on published academic papers to investigate trends in machine learning research over recent decades (1987-2017). The data is an archive of 7,241 publications from the Neural Information Processing Systems (NIPS) conferences. I use visualisation to show the change in the number of publications over time, as well as Latent Dirichlet Allocation to investigate which are the most prevalent machine learning topics, and how these vary from year to year.
 - Real vs fake news prediction: I take a dataset of real and fake news articles and, with feature engineering and dimensionality reduction, I develop a model to predict whether an article is real or fake, with an accuracy score of 99%.
 - Credit card fraud detection: Using a set of financial transactions and associated data, I develop a classification model which can determine whether a credit card transaction is fraudulent or not, with an AUC ROC score of 99.7%.
