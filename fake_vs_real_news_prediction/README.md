@@ -6,3 +6,5 @@ In this project, I take a dataset of news articles from https://www.kaggle.com/c
 - Feature engineering and dimensionality reduction;
 - Model development and hyperparameter tuning; and
 - Model selection.
+
+This project uses Python and a number of packages including NumPy and Pandas for data manipulation, Matplotlib and Seaborn for data visualisation, and scikit-learn for creating, fit, and evaluating the machine learnings models.
