@@ -143,7 +143,17 @@ class ChatBot:
         print("Model Saved")
         
     def message(self, message):
-        ''' 
+        ''' Prints a response to the input message.
+        
+        Parameters
+        ----------
+        message: str
+            Input message.
+        
+        Returns
+        -------
+        str
+            response message
         '''
         
         # Make the message lower case and tokenize it
@@ -159,3 +169,4 @@ class ChatBot:
         # Find the most similar message to the message given
         similar_message = self.model.docvecs.most_similar([message_vector])[0][0]
         print(self.friend_name + ': ' + self.friend_chat[similar_message])
+        return(self.friend_name + ': ' + self.friend_chat[similar_message])
