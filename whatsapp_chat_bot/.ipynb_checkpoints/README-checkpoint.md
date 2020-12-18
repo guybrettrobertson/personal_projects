@@ -20,6 +20,6 @@ After the chat bot has been trained on the input message history, it can have a 
 
 I have tested the chat bot on two different conversations here, using three types of input messages:
 
-- Messages taken from the input data, which we would expect to result in the same response that was given in the input data);
+- Messages taken from the input data, which we would expect to result in the same response that was given in the input data;
 - Messages similar but not identical to messages in the input data, which we would expect to give some reasonable responses; and
 - Totally new messages, which we would not expect sensible responses, given how simplistic the chat bot is.

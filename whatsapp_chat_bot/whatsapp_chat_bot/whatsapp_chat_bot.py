@@ -35,6 +35,10 @@ class ChatBot:
         Nil.
         '''
         
+        assert type(my_name) == str, 'my_name must be a string.'
+        assert type(friend_name) == str, 'friend_name must be a string.'
+        assert type(my_name) == str, 'my_name must be a string.'
+        
         # The name of the person who has downloaded the chat data
         self.my_name = my_name
         # The name of the other person
