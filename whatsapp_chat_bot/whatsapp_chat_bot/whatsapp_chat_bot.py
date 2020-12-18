@@ -183,6 +183,8 @@ class ChatBot:
             message = [word for word in message if word not in stop_words]
             
         # Infer the message's vector
+        # epochs is chosen to be a very high number as there is very little
+        # time cost associated with this.
         message_vector = self.model.infer_vector(message, epochs=1000)
         
         # Find the most similar message to the message given
