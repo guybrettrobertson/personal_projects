@@ -35,9 +35,11 @@ class ChatBot:
         Nil.
         '''
         
+        # Check input types
         assert type(my_name) == str, 'my_name must be a string.'
         assert type(friend_name) == str, 'friend_name must be a string.'
-        assert type(my_name) == str, 'my_name must be a string.'
+        assert type(chat_file_path) == str, 'chat_file_path must be a string.'
+        assert type(remove_stop_words) == bool, 'remove_stop_words must be a Boolean.'
         
         # The name of the person who has downloaded the chat data
         self.my_name = my_name
@@ -47,9 +49,13 @@ class ChatBot:
         self.remove_stop_words = remove_stop_words
         
         # Load the raw chat data
-        chat = open(chat_file_path)
-        chat_text = chat.read()
-        raw_chat = chat_text.splitlines()
+        try:
+            chat = open(chat_file_path)
+            chat_text = chat.read()
+            raw_chat = chat_text.splitlines()
+        except:
+            print('chat_file_path must be the file path to a .txt file \
+            containing a WhatsApp conversation history.')
         
         # List of messages from me
         self.me_chat = []
@@ -107,13 +113,19 @@ class ChatBot:
             Maximum number of epochs iterated in training the model.
         vec_size: int
             Size of the vector used to model the tagged messages.
-        alpha: float32
+        alpha: float
             The initial learning rate.
         
         Returns
         -------
         Nil.
         '''
+        
+        # Check input types
+        assert type(max_epochs) == int, 'max_epochs must be an integer.'
+        assert type(vec_size) == int, 'vec_size must be an integer.'
+        assert type(max_epochs) in [int, float] , 'max_epochs must be a number.'
+        
         # Instantiate the Doc2Vec model
         self.model = Doc2Vec(vector_size=vec_size,
                              alpha=alpha, 
@@ -159,6 +171,9 @@ class ChatBot:
         str
             response message
         '''
+        
+        # Force the input into a string, in case it is another type
+        message = str(message)
         
         # Make the message lower case and tokenize it
         message = word_tokenize(message.lower())
